@@ -10,9 +10,9 @@ export default function ChessBoard (){
 
     for(let j = vertical.length-1; j >= 0; j--){
         for(let i = 0; i < horizontal.length; i++){
-            const number = i + j + 2;
+            const number = i + j;
 
-            if(number % 2 ===0){
+            if(number % 2 === 0){
                 board.push(
                     <div className="dark-tile">
                         {horizontal[i]}{vertical[j]}
