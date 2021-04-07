@@ -6,10 +6,14 @@
     height: 800px;
 }
 
+/*
 #chessboard .dark-tile{
+    display: inline-flex;
     background-color: #b58863;
 }
 
 #chessboard .light-tile{
+    display: inline-flex;
     background-color: #f0d9b5;
 }
+*/

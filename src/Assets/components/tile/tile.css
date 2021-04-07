@@ -1,14 +1,23 @@
 .tile{
-    display: grid;
-    place-content: center;
+    display: flex;
     width: 100px;
     height: 100px;
 }
 
 .dark-tile{
+    display: flex;
     background-color: #b58863;
 }
 
 .light-tile{
+    display: flex;
     background-color: #f0d9b5;
+}
+
+.row{
+    align-self: flex-start;
+}
+
+.col {
+    align-self: flex-end;
 }
