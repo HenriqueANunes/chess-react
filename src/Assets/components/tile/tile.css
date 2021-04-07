@@ -1,29 +1,28 @@
 .tile{
-    display: flex;
-    align-items: center;
+    display: inline-flex;
+    justify-content: space-between;
     width: 100px;
     height: 100px;
 }
 
 .dark-tile{
-    display: flex;
     background-color: #b58863;
 }
 
 .light-tile{
-    display: flex;
     background-color: #f0d9b5;
 }
 
 .row{
     align-self: flex-start;
     font-size: 23px;
+    padding: 5px;
 }
 
 .col {
     align-self: flex-end;
     font-size: 25px;
-
+    padding: 5px;
 }
 
 .light{
