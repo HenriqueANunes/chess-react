@@ -10,18 +10,18 @@ interface Props{
 export default function Tile({number, image, row, col}: Props){
     if(number % 2 === 0){
         return (
-            <div className="dark-tile">
+            <div className="tile dark-tile">
                 {/*<img src={image}/>*/}
-                <div className="row">{row}</div>
-                <div className="col">{col}</div>
+                <div className="row light">{row}</div>
+                <div className="col light">{col}</div>
             </div>
         )
     }else{
         return (
-            <div className="light-tile">
+            <div className="tile light-tile">
                 {/*<img src={image}/>*/}
-                <div className="row">{row}</div>
-                <div className="col">{col}</div>
+                <div className="row dark">{row}</div>
+                <div className="col dark">{col}</div>
             </div>
         );
     }

@@ -1,5 +1,6 @@
 .tile{
     display: flex;
+    align-items: center;
     width: 100px;
     height: 100px;
 }
@@ -16,8 +17,19 @@
 
 .row{
     align-self: flex-start;
+    font-size: 23px;
 }
 
 .col {
     align-self: flex-end;
+    font-size: 25px;
+
+}
+
+.light{
+    color: #f0d9b5;
+}
+
+.dark{
+    color: #b58863;
 }
