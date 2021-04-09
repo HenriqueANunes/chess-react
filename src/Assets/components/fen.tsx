@@ -17,15 +17,16 @@ export function Fen(fen:string){
     for(let char of fenBoard){
         if(char === '/'){
             col = 0;
-            row --;
+            row--;
         }else{
             if(!isNaN(parseInt(char))){
                 col += parseInt(char);
             }else{
                 let pieceTeam = char === char.toUpperCase() ? Team.WHITE : Team.BLACK;
                 let pieceType = pieceTypeFromSymbol['p'];
+                char = char.toUpperCase();
                 pieces.push({
-                    image: "src/Assets/images/"+char+".png",
+                    image: "src/Assets/images/"+ pieceTeam === "0" ? "b"+char : "w"+char +".png",
                     position:{row:row,col:col},
                     team:pieceTeam,
                     type:pieceType

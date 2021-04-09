@@ -10,18 +10,18 @@ export default function ChessBoard (){
     let board = [];
     const pieces = Fen("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1")
 
-    for(let j = col.length-1; j >= 0; j--){
-        for(let i = 0; i < row.length; i++){
+    for(let i = col.length-1; i >= 0; i--){
+        for(let j = 0; j < row.length; j++){
             let image = undefined;
             const number = i + j;
 
             for(let p of pieces){
-                if(j === p.position.row && i === p.position.col){
+                if(i === p.position.row && j === p.position.col){
                     image = p.image;
                 }
             }
 
-            board.push(<Tile number={number} image={image} row={i === 0 ? String(row[j]+1) : ""} col={j === 0 ? col[i] : ""}/>);
+            board.push(<Tile number={number} image={image} row={j === 0 ? String(row[i]+1) : ""} col={i === 0 ? col[j] : ""}/>);
         }
     }
 
