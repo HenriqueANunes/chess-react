@@ -1,5 +1,5 @@
 .tile{
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     width: 100px;
     height: 100px;
@@ -31,4 +31,8 @@
 
 .dark{
     color: #b58863;
+}
+
+.img{
+    align-self: center;
 }
