@@ -1,4 +1,5 @@
 .tile{
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     width: 100px;
@@ -17,12 +18,16 @@
     align-self: flex-start;
     font-size: 23px;
     padding: 5px;
+    /*overflow: hidden;*/
+    position: absolute;
 }
 
 .col {
     align-self: flex-end;
     font-size: 25px;
     padding: 5px;
+    /*overflow: hidden;*/
+    position: absolute;
 }
 
 .light{
@@ -34,5 +39,10 @@
 }
 
 .img{
-    align-self: center;
+    /*align-self: center;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    width: 100px;
+    height: 100px;
 }
