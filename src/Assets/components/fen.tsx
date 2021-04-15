@@ -24,7 +24,7 @@ export function Fen(fen:string){
             }else{
                 let pieceTeam = char === char.toUpperCase() ? Team.WHITE : Team.BLACK;
                 let pieceType = pieceTypeFromSymbol['p'];
-                char = char.toUpperCase();
+                char = char.toLowerCase();
                 pieces.push({
                     image: "chess-react/images/" + (pieceTeam === 0   ? "b"+char : "w"+char) + ".png",
                     position:{row:row,col:col},
