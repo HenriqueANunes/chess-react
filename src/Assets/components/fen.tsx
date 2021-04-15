@@ -26,7 +26,7 @@ export function Fen(fen:string){
                 let pieceType = pieceTypeFromSymbol['p'];
                 char = char.toLowerCase();
                 pieces.push({
-                    image: "chess-react/images/" + (pieceTeam === 0   ? "b"+char : "w"+char) + ".png",
+                    image: "./images/" + (pieceTeam === 0   ? "b"+char : "w"+char) + ".png",
                     position:{row:row,col:col},
                     team:pieceTeam,
                     type:pieceType
