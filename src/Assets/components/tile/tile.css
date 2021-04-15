@@ -38,11 +38,19 @@
     color: #b58863;
 }
 
-.img{
+.tile .piece{
     /*align-self: center;*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80px 80px;
     width: 100px;
     height: 100px;
+}
+
+.tile .piece:hover{
+    cursor: grab;
+}
+
+.tile .piece:active{
+    cursor: grabbing;
 }
